@@ -37,7 +37,7 @@ export const signup =
         type: SIGNUP_FAIL,
       });
 
-      dispatch(setAlert("Error Creating User Account", "error"));
+      dispatch(showAlert("Error creating user account", "error"));
     }
   };
 
@@ -63,17 +63,17 @@ export const login = (email, password) => async (dispatch) => {
       payload: res.data,
     });
 
-    dispatch(setAlert("Authenticated successfully", "success"));
+    dispatch(showAlert("Authenticated successfully", "success"));
   } catch (err) {
     dispatch({
       type: LOGIN_FAIL,
     });
 
-    dispatch(setAlert("Error Authenticating", "error"));
+    dispatch(showAlert("Error authenticating", "error"));
   }
 };
 
 export const logout = () => (dispatch) => {
-  dispatch(setAlert("logout successful.", "success"));
+  dispatch(showAlert("Logout successful.", "success"));
   dispatch({ type: LOGOUT });
 };

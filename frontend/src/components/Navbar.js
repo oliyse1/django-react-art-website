@@ -40,26 +40,17 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </div>
         <div className="navbar__second">
           <li className="navbar__second__item">
-            <NavLink className="navbar__second__item__link" exact to="/">
+            <NavLink className="navbar__second__item__link" to="/">
               Home
             </NavLink>
           </li>
           <li className="navbar__second__item">
-            <NavLink
-              className="navbar__second__item__link"
-              exact
-              to="/listings"
-            >
-              Listings
-            </NavLink>
-          </li>
-          <li className="navbar__second__item">
-            <NavLink className="navbar__second__item__link" exact to="/about">
+            <NavLink className="navbar__second__item__link" to="/about">
               About
             </NavLink>
           </li>
           <li className="navbar__second__item">
-            <NavLink className="navbar__second__item__link" exact to="/contact">
+            <NavLink className="navbar__second__item__link" to="/contact">
               Contact
             </NavLink>
           </li>

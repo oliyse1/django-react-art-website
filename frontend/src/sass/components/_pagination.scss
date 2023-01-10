@@ -1,0 +1,21 @@
+.pagination {
+    &__page {
+        display: inline-block;
+        font-size: 1.6rem;
+        color: $color-black;
+        border: 0.1rem solid $color-black;
+        cursor: pointer;
+        margin: 0.1rem;
+        padding: 1rem;
+
+        &__active {
+            color: $color-white;
+            background-color: $color-black;
+        }
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-black;
+        }
+    }
+}

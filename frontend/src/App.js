@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./containers/Home";
 import About from "./containers/About";
 import Contact from "./containers/Contact";
-import Adverts from "./containers/Adverts";
 import AdvertDetail from "./containers/AdvertDetail";
 import Login from "./containers/Login";
 import SignUp from "./containers/SignUp";
@@ -22,21 +21,20 @@ const App = () => (
     <Router>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/adverts" element={<Adverts />} />
+          <Route exact="true" path="/" element={<Home />} />
+          <Route exact="true" path="/about" element={<About />} />
+          <Route exact="true" path="/contact" element={<Contact />} />
           <Route
-            exact
-            path="/listings/:id"
+            exact="true"
+            path="/adverts/:id"
             element={
               <PrivateRoute>
                 <AdvertDetail />
               </PrivateRoute>
             }
           />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/signup" element={<SignUp />} />
+          <Route exact="true" path="/login" element={<Login />} />
+          <Route exact="true" path="/signup" element={<SignUp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

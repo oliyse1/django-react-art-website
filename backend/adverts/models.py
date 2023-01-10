@@ -6,6 +6,7 @@ from artists.models import Artist
 class Advert(models.Model):
     class Subject(models.TextChoices):
         ABSTRACT = 'Abstract'
+        PEOPLE = 'People'
         LANDSCAPE = 'Landscape'
         ANIMAL = 'Animal'
         OTHER = "Other"

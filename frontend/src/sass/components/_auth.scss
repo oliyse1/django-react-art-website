@@ -34,6 +34,7 @@
             width: 80%;
             margin-left: 10%;
             background-color: $color-orange-bright;
+            box-shadow: 0.1rem 0.2rem 0.3rem rgba(0,0,0,0.2);
             color: $color-white;
             border: none;
             border-radius: 0.5rem;
@@ -44,7 +45,7 @@
 
             &:hover {
                 color: $color-white;
-                background-color: $color-grey-dark;
+                background-color: $color-orange-dark;
             }
         }
     }

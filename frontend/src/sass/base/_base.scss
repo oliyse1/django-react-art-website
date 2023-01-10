@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 62.5%; //relative to rem, 1 rem is 10px by default
+    font-size: 65.5%; //relative to rem, 1 rem is 10px by default
 
     @include respond(tab-land) {
         font-size: 56.25%;
@@ -18,13 +18,13 @@ html {
     }
 
     @include respond(phone) {
-        font-size: 50%;
+        font-size: 80%;
     }
 }
 
 body {
     box-sizing: border-box; 
-    font-family: bebas-neue, sans-serif;
+    font-family: times 'Times New Roman', Times, serif;
     background-color: $color-white;
 
     @include respond(tab-port) {

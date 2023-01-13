@@ -12,9 +12,3 @@ class DealerListView(ListAPIView):
 class DealerView(RetrieveAPIView):
     queryset = Dealer.objects.all()
     serializer_class = DealerSerializer
-
-class TopSellerView(ListAPIView):
-    permission_classes = (permissions.AllowAny, )
-    queryset = Dealer.objects.filter(top_seller=True)
-    serializer_class = DealerSerializer
-    pagination_class = None

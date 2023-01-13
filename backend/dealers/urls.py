@@ -1,8 +1,7 @@
 from django.urls import path
-from .views import DealerListView, DealerView, TopSellerView
+from .views import DealerListView, DealerView
 
 urlpatterns = [
     path('', DealerListView.as_view()),
-    path('topseller', TopSellerView.as_view()),
     path('<pk>', DealerView.as_view()),
 ]

@@ -1,0 +1,64 @@
+.contact {
+    margin-bottom: 6rem;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        margin-left: 20%;
+        margin-right: 20%;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+            margin-top: 4rem;
+        }
+
+        &__label {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: $color-black;
+        }
+
+        &__input {
+            margin-bottom: 2rem;
+            height: 5rem;
+            padding: 2rem;
+            font-size: 1.6rem;
+            outline-color: $color-orange-bright;
+            color: $color-black;
+            border: none;
+            background-color: $color-grey-light;
+            border-radius: 0.4rem;
+        }
+
+        &__textarea {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            font-size: 1.6rem;
+            outline-color: $color-orange-bright;
+            border: none;
+            background-color: $color-grey-light;
+            border-radius: 0.4rem;
+            resize: none;
+        }
+
+        &__button {
+            font-size: 2rem;
+            padding: 1rem;
+            width: 20%;
+            margin: 2rem 0;
+            background-color: $color-orange-bright;
+            color: $color-white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            border-radius: 0.5rem;
+            box-shadow: 0.1rem 0.2rem 0.3rem rgba(0,0,0,0.2);
+
+            &:hover {
+                background-color: $color-orange-dark;
+            }
+        }
+
+    }
+}

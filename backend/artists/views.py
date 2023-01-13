@@ -5,11 +5,11 @@ from rest_framework import permissions
 
 class ArtistListView(ListAPIView):
     queryset = Artist.objects.all()
-    # permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.AllowAny, )
     serializer_class = ArtistSerializer
     pagination_class = None
 
 class ArtistView(RetrieveAPIView):
     queryset = Artist.objects.all()
-    # permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.AllowAny, )
     serializer_class = ArtistSerializer

@@ -3,6 +3,9 @@
 This website is built using Django, PostgreSQL for the back-end, React, Redux and SASS for the front-end and deployed via DigitalOcean. Authentication is implemented using JSON Web Tokens with the Django Rest Framework Simple JWT package. Django-Admin is used for site admins to update / maintain the site easily.
 
 You can visit the website here: http://178.62.198.136/
+Example user account credentials:
+Email: olivia@gmail.com
+Password: password
 
 - This website has the following features implemented:
 - Sign up / login for users.

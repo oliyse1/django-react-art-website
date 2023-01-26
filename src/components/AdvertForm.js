@@ -35,6 +35,8 @@ const AdvertForm = (props) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log(subject);
+    console.log(medium);
 
     const config = {
       headers: {
@@ -45,7 +47,7 @@ const AdvertForm = (props) => {
     setLoading(true);
     axios
       .post(
-        "http://localhost:8000/api/adverts/search",
+        "http://178.62.198.136/api/adverts/search",
         {
           min_price,
           max_price,
@@ -62,6 +64,7 @@ const AdvertForm = (props) => {
       .then((res) => {
         setLoading(false);
         props.setAdverts(res.data);
+        console.log(res.data);
         window.scrollTo(0, 0);
       })
       .catch((err) => {
@@ -145,6 +148,7 @@ const AdvertForm = (props) => {
               <option>People</option>
               <option>Landscape</option>
               <option>Animal</option>
+              <option>Other</option>
             </select>
           </div>
 

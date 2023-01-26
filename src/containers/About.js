@@ -16,7 +16,7 @@ const About = () => {
     const getDealers = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/dealers/`,
+          `http://178.62.198.136/api/dealers/`,
           config
         );
         setDealers(res.data);

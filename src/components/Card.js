@@ -17,7 +17,7 @@ const Card = (props) => {
 
     if (id) {
       axios
-        .get(`http://localhost:8000/api/artists/${id}`, config)
+        .get(`http://178.62.198.136/api/artists/${id}`, config)
         .then((res) => {
           setArtist(res.data);
           // console.log(artist);
@@ -34,7 +34,7 @@ const Card = (props) => {
     <div className="card">
       <img
         className="card__image"
-        src={`http://localhost:8000${props.photo_main}`}
+        src={`http://178.62.198.136${props.photo_main}`}
         alt="Artwork"
       />
       <p className="card__title">{props.title}</p>

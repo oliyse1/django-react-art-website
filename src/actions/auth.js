@@ -21,7 +21,7 @@ export const signup =
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/accounts/signup",
+        "http://178.62.198.136/api/accounts/signup",
         body,
         config
       );
@@ -53,7 +53,7 @@ export const login = (email, password) => async (dispatch) => {
 
   try {
     const res = await axios.post(
-      "http://localhost:8000/api/token/",
+      "http://178.62.198.136/api/token/",
       body,
       config
     );

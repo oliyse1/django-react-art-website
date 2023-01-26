@@ -22,7 +22,7 @@ const AdvertDetail = (props) => {
     };
 
     axios
-      .get(`http://localhost:8000/api/adverts/${id}`, config)
+      .get(`http://178.62.198.136/api/adverts/${id}`, config)
       .then((res) => {
         setAdvert(res.data);
         setPrice(numberWithCommas(res.data.price));
@@ -41,7 +41,7 @@ const AdvertDetail = (props) => {
 
     if (id) {
       axios
-        .get(`http://localhost:8000/api/dealers/${id}`, config)
+        .get(`http://178.62.198.136/api/dealers/${id}`, config)
         .then((res) => {
           setDealer(res.data);
         })
@@ -61,7 +61,7 @@ const AdvertDetail = (props) => {
 
     if (id) {
       axios
-        .get(`http://localhost:8000/api/artists/${id}`, config)
+        .get(`http://178.62.198.136/api/artists/${id}`, config)
         .then((res) => {
           setArtist(res.data);
         })

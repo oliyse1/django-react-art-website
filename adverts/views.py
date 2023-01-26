@@ -30,7 +30,7 @@ class SearchView(APIView):
             queryset = queryset.filter(subject__iexact=subject)
 
         medium = data['medium']
-        if subject != 'Any':
+        if medium != 'Any':
             queryset = queryset.filter(medium__iexact=medium)
 
         min_price = data['min_price']

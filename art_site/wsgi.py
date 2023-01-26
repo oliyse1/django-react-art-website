@@ -1,5 +1,5 @@
 """
-WSGI config for real_estate_listings project.
+WSGI config for art_site project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
